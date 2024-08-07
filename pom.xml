@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ricciliao</groupId>
+    <artifactId>dependencies-control-center</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <name>dependencies-control-center</name>
+    <description>dependencies control center</description>
+    <properties>
+        <java.version>11</java.version>
+        <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+        <spring-boot-dependencies.version>3.1.0</spring-boot-dependencies.version>
+        <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
+    </properties>
+    <contributors>
+        <contributor>
+            <name>Ricci Liao</name>
+            <email>riccix@163.com</email>
+            <timezone>2024-08-05 17:38:17</timezone>
+        </contributor>
+    </contributors>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${javax.servlet-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${springfox-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.7.18</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
