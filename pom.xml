@@ -9,11 +9,15 @@
     <name>dependencies-control-center</name>
     <description>dependencies control center</description>
     <properties>
-        <java.version>11</java.version>
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
         <spring-boot-dependencies.version>3.1.0</spring-boot-dependencies.version>
         <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
         <logstash-logback-encoder.version>7.1.1</logstash-logback-encoder.version>
+        <mysql.version>9.0.0</mysql.version>
+        <commons-text.version>1.10.0</commons-text.version>
+        <commons-collections4.version>4.4</commons-collections4.version>
+        <commons-components.version>1.0.0</commons-components.version>
+        <dynamic-aop.version>1.0.0</dynamic-aop.version>
     </properties>
     <contributors>
         <contributor>
@@ -39,6 +43,38 @@
                 <artifactId>logstash-logback-encoder</artifactId>
                 <version>${logstash-logback-encoder.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>${mysql.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.protobuf</groupId>
+                        <artifactId>protobuf-java</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>${commons-text.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons-collections4.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao</groupId>
+                <artifactId>common-components</artifactId>
+                <version>${commons-components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao</groupId>
+                <artifactId>dynamic-aop</artifactId>
+                <version>${dynamic-aop.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
