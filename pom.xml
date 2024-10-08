@@ -18,6 +18,9 @@
         <commons-collections4.version>4.4</commons-collections4.version>
         <commons-components.version>1.0.0</commons-components.version>
         <dynamic-aop.version>1.0.0</dynamic-aop.version>
+        <!--plugin-->
+        <sonar-maven-plugin.version>4.0.0.4121</sonar-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
     </properties>
     <contributors>
         <contributor>
@@ -84,4 +87,21 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>${sonar-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>${jacoco-maven-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
