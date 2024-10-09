@@ -9,8 +9,11 @@
     <name>dependencies-control-center</name>
     <description>dependencies control center</description>
     <properties>
-        <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
-        <spring-boot-dependencies.version>3.1.0</spring-boot-dependencies.version>
+        <java.version>20</java.version>
+        <maven.compiler.source>20</maven.compiler.source>
+        <maven.compiler.target>20</maven.compiler.target>
+        <spring-boot-dependencies.version>3.2.10</spring-boot-dependencies.version>
+        <javax.servlet-api.version>6.0.0</javax.servlet-api.version>
         <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
         <logstash-logback-encoder.version>7.1.1</logstash-logback-encoder.version>
         <mysql.version>9.0.0</mysql.version>
@@ -81,7 +84,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.7.18</version>
+                <version>${spring-boot-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

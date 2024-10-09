@@ -1,12 +1,16 @@
 # Dependencies Version Control  `🚀️ V1.0.0`
 
+⚡ OpenJDK 20
+
+⚡ Tomcat 10.1
+
 ### 📚 Dependency Management
 
-`org.springframework.boot:spring-boot-dependencies:3.1.0`
+`org.springframework.boot:spring-boot-dependencies:3.2.10`
 
 | groupId              | artifactId               | version |
 |----------------------|--------------------------|---------|
-| javax.servlet        | javax.servlet-api        | 3.1.0   |
+| javax.servlet        | javax.servlet-api        | 6.0.0   |
 | io.springfox         | springfox-boot-starter   | 3.0.0   |
 | net.logstash.logback | logstash-logback-encoder | 7.1.1   |
 | com.mysql            | mysql-connector-j        | 9.0.0   |
