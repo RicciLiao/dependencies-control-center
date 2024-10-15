@@ -10,7 +10,7 @@
 
 | groupId              | artifactId               | version |
 |----------------------|--------------------------|---------|
-| javax.servlet        | javax.servlet-api        | 6.0.0   |
+| jakarta.servlet      | jakarta.servlet-api      | 6.0.0   |
 | io.springfox         | springfox-boot-starter   | 3.0.0   |
 | net.logstash.logback | logstash-logback-encoder | 7.1.1   |
 | com.mysql            | mysql-connector-j        | 9.0.0   |

@@ -13,8 +13,8 @@
         <maven.compiler.source>20</maven.compiler.source>
         <maven.compiler.target>20</maven.compiler.target>
         <spring-boot-dependencies.version>3.2.10</spring-boot-dependencies.version>
-        <javax.servlet-api.version>6.0.0</javax.servlet-api.version>
-        <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
+        <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
+        <springdoc-openapi-starter-webmvc-ui.version>2.6.0</springdoc-openapi-starter-webmvc-ui.version>
         <logstash-logback-encoder.version>7.1.1</logstash-logback-encoder.version>
         <mysql.version>9.0.0</mysql.version>
         <commons-text.version>1.10.0</commons-text.version>
@@ -35,14 +35,14 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>${javax.servlet-api.version}</version>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>${jakarta.servlet-api.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-boot-starter</artifactId>
-                <version>${springfox-boot-starter.version}</version>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc-openapi-starter-webmvc-ui.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.logstash.logback</groupId>
