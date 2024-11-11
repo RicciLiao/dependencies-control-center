@@ -24,6 +24,7 @@
         <!--plugin-->
         <sonar-maven-plugin.version>4.0.0.4121</sonar-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
+        <migrations-maven-plugin.version>1.2.0</migrations-maven-plugin.version>
     </properties>
     <contributors>
         <contributor>
@@ -103,6 +104,11 @@
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>${jacoco-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.mybatis.maven</groupId>
+                    <artifactId>migrations-maven-plugin</artifactId>
+                    <version>${migrations-maven-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
