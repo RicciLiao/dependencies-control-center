@@ -14,13 +14,14 @@
         <maven.compiler.target>20</maven.compiler.target>
         <spring-boot-dependencies.version>3.2.10</spring-boot-dependencies.version>
         <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
-        <springdoc-openapi-starter-webmvc-ui.version>2.6.0</springdoc-openapi-starter-webmvc-ui.version>
+        <springdoc-openapi-starter.version>2.6.0</springdoc-openapi-starter.version>
         <logstash-logback-encoder.version>7.1.1</logstash-logback-encoder.version>
         <mysql.version>9.0.0</mysql.version>
         <commons-text.version>1.10.0</commons-text.version>
         <commons-collections4.version>4.4</commons-collections4.version>
         <commons-components.version>1.0.0</commons-components.version>
         <dynamic-aop.version>1.0.0</dynamic-aop.version>
+        <spring-cloud.version>2023.0.3</spring-cloud.version>
         <!--plugin-->
         <sonar-maven-plugin.version>4.0.0.4121</sonar-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
@@ -43,7 +44,12 @@
             <dependency>
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-                <version>${springdoc-openapi-starter-webmvc-ui.version}</version>
+                <version>${springdoc-openapi-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webflux-ui</artifactId>
+                <version>${springdoc-openapi-starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.logstash.logback</groupId>
@@ -86,6 +92,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot-dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
