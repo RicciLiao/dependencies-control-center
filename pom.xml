@@ -9,9 +9,10 @@
     <name>dependencies-control-center</name>
     <description>dependencies control center</description>
     <properties>
-        <java.version>20</java.version>
-        <maven.compiler.source>20</maven.compiler.source>
-        <maven.compiler.target>20</maven.compiler.target>
+        <java.version>21</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+
         <spring-boot-dependencies.version>3.2.10</spring-boot-dependencies.version>
         <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
         <springdoc-openapi-starter.version>2.6.0</springdoc-openapi-starter.version>
@@ -19,9 +20,12 @@
         <mysql.version>9.0.0</mysql.version>
         <commons-text.version>1.10.0</commons-text.version>
         <commons-collections4.version>4.4</commons-collections4.version>
-        <commons-components.version>1.0.0</commons-components.version>
-        <dynamic-aop.version>1.0.0</dynamic-aop.version>
+        <reflections.version>0.10.2</reflections.version>
         <spring-cloud.version>2023.0.3</spring-cloud.version>
+        <!--x-->
+        <x-common-components.version>1.0.0</x-common-components.version>
+        <x-components-starter.version>1.0.0</x-components-starter.version>
+        <x-dynamic-aop-component.version>1.0.0</x-dynamic-aop-component.version>
         <!--plugin-->
         <sonar-maven-plugin.version>4.0.0.4121</sonar-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
@@ -78,14 +82,35 @@
                 <version>${commons-collections4.version}</version>
             </dependency>
             <dependency>
-                <groupId>ricciliao</groupId>
-                <artifactId>common-components</artifactId>
-                <version>${commons-components.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-quartz</artifactId>
+                <version>${spring-boot-dependencies.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.zaxxer</groupId>
+                        <artifactId>HikariCP-java7</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
-                <groupId>ricciliao</groupId>
-                <artifactId>dynamic-aop</artifactId>
-                <version>${dynamic-aop.version}</version>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>${reflections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao.x</groupId>
+                <artifactId>common-components</artifactId>
+                <version>${x-common-components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao.x</groupId>
+                <artifactId>components-starter</artifactId>
+                <version>${x-components-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao.x</groupId>
+                <artifactId>dynamic-aop-component</artifactId>
+                <version>${x-dynamic-aop-component.version}</version>
             </dependency>
 
             <dependency>
