@@ -1,6 +1,6 @@
 # Dependencies Version Control  `🚀️ V1.0.0`
 
-⚡ OpenJDK 20
+⚡ OpenJDK 21
 
 ⚡ Tomcat 10.1
 
@@ -18,8 +18,10 @@
 | com.mysql            | mysql-connector-j                    | 9.0.0   |
 | org.apache.commons   | commons-text                         | 1.10.0  |
 | org.apache.commons   | commons-collections4                 | 4.4     |
-| ricciliao            | common-components                    | 1.0.0   |
-| ricciliao            | dynamic-aop                          | 1.0.0   |
+| ricciliao.x          | common-components                    | 1.0.0   |
+| ricciliao.x          | dynamic-aop-component                | 1.0.0   |
+| ricciliao.x          | audit-log-component                  | 1.0.0   |
+| ricciliao.x          | components-starter                   | 1.0.0   |
 
 ### 🧩Plugin Management
 
