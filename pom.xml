@@ -33,6 +33,7 @@
         <sonar-maven-plugin.version>4.0.0.4121</sonar-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
         <migrations-maven-plugin.version>1.2.0</migrations-maven-plugin.version>
+        <docker-maven-plugin.version>1.2.2</docker-maven-plugin.version>
     </properties>
     <contributors>
         <contributor>
@@ -155,6 +156,11 @@
                     <groupId>org.mybatis.maven</groupId>
                     <artifactId>migrations-maven-plugin</artifactId>
                     <version>${migrations-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.spotify</groupId>
+                    <artifactId>docker-maven-plugin</artifactId>
+                    <version>${docker-maven-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
