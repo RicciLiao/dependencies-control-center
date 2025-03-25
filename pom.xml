@@ -29,6 +29,7 @@
         <x-components-starter.version>1.0.0</x-components-starter.version>
         <x-dynamic-aop-component.version>1.0.0</x-dynamic-aop-component.version>
         <x-audit-log-component.version>1.0.0</x-audit-log-component.version>
+        <cache-consumer-components.version>1.0.0</cache-consumer-components.version>
         <!--plugin-->
         <sonar-maven-plugin.version>4.0.0.4121</sonar-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
@@ -132,6 +133,31 @@
                 <artifactId>audit-log-component</artifactId>
                 <version>${x-audit-log-component.version}</version>
             </dependency>
+            <dependency>
+                <groupId>ricciliao.x</groupId>
+                <artifactId>cache-consumer-components</artifactId>
+                <version>${cache-consumer-components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao.x</groupId>
+                <artifactId>cache-consumer-xstarter</artifactId>
+                <version>${cache-consumer-components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao.x</groupId>
+                <artifactId>cache-xprovider</artifactId>
+                <version>${cache-consumer-components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao</groupId>
+                <artifactId>cache-consumer-components-bsm</artifactId>
+                <version>${cache-consumer-components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao</groupId>
+                <artifactId>cache-consumer-components-message</artifactId>
+                <version>${cache-consumer-components.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -167,11 +193,6 @@
                     <groupId>org.mybatis.maven</groupId>
                     <artifactId>migrations-maven-plugin</artifactId>
                     <version>${migrations-maven-plugin.version}</version>
-                </plugin>
-                <plugin>
-                    <groupId>com.spotify</groupId>
-                    <artifactId>docker-maven-plugin</artifactId>
-                    <version>${docker-maven-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
