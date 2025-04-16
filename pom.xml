@@ -24,6 +24,7 @@
         <commons-collections4.version>4.4</commons-collections4.version>
         <reflections.version>0.10.2</reflections.version>
         <spring-cloud.version>2023.0.3</spring-cloud.version>
+        <jedis.version>5.2.0</jedis.version>
         <!--x-->
         <x-common-components.version>1.0.0</x-common-components.version>
         <x-components-starter.version>1.0.0</x-components-starter.version>
@@ -55,6 +56,17 @@
                     <exclusion>
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-starter-tomcat</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${spring-boot-dependencies.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>io.lettuce</groupId>
+                        <artifactId>lettuce-core</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
@@ -154,6 +166,16 @@
                 <groupId>ricciliao.x</groupId>
                 <artifactId>cache-consumer-message</artifactId>
                 <version>${cache-consumer.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis-json</artifactId>
+                <version>${jedis.version}</version>
             </dependency>
 
             <dependency>
