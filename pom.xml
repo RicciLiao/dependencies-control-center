@@ -30,9 +30,8 @@
         <x-components-starter.version>1.0.0</x-components-starter.version>
         <x-dynamic-aop-component.version>1.0.0</x-dynamic-aop-component.version>
         <x-audit-log-component.version>1.0.0</x-audit-log-component.version>
-        <cache-consumer.version>1.0.0</cache-consumer.version>
-        <cache-provider.version>1.0.0</cache-provider.version>
-        <cache-consumer-starter.version>1.0.0</cache-consumer-starter.version>
+        <cache-common-component.version>1.0.0</cache-common-component.version>
+        <cache-consumer-component.version>1.0.0</cache-consumer-component.version>
         <!--plugin-->
         <sonar-maven-plugin.version>4.0.0.4121</sonar-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
@@ -149,23 +148,13 @@
             </dependency>
             <dependency>
                 <groupId>ricciliao.x</groupId>
-                <artifactId>cache-consumer-common</artifactId>
-                <version>${cache-consumer.version}</version>
+                <artifactId>cache-common-component</artifactId>
+                <version>${cache-common-component.version}</version>
             </dependency>
             <dependency>
                 <groupId>ricciliao.x</groupId>
-                <artifactId>cache-provider</artifactId>
-                <version>${cache-provider.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ricciliao.x</groupId>
-                <artifactId>cache-consumer-bsm</artifactId>
-                <version>${cache-consumer.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ricciliao.x</groupId>
-                <artifactId>cache-consumer-message</artifactId>
-                <version>${cache-consumer.version}</version>
+                <artifactId>cache-consumer-component</artifactId>
+                <version>${cache-consumer-component.version}</version>
             </dependency>
             <dependency>
                 <groupId>redis.clients</groupId>
