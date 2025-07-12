@@ -23,10 +23,8 @@
 | ricciliao.x          | components-starter                   | 1.0.0   |
 | ricciliao.x          | dynamic-aop-component                | 1.0.0   |
 | ricciliao.x          | audit-log-component                  | 1.0.0   |
-| ricciliao.x          | cache-consumer-common                | 1.0.0   |
-| ricciliao.x          | cache-provider                       | 1.0.0   |
-| ricciliao.x          | cache-consumer-bsm                   | 1.0.0   |
-| ricciliao.x          | cache-consumer-message               | 1.0.0   |
+| ricciliao.x          | cache-common-component               | 1.0.0   |
+| ricciliao.x          | cache-consumer-component             | 1.0.0   |
 | redis.clients        | jedis                                | 5.2.0   |
 
 ### 🧩Plugin Management
