@@ -29,7 +29,8 @@
         <x-common-components.version>1.0.0</x-common-components.version>
         <x-components-starter.version>1.0.0</x-components-starter.version>
         <x-dynamic-aop-component.version>1.0.0</x-dynamic-aop-component.version>
-        <x-audit-log-component.version>1.0.0</x-audit-log-component.version>
+        <x-audit-logging-component.version>1.0.0</x-audit-logging-component.version>
+        <x-logging-api.version>1.0.0</x-logging-api.version>
         <cache-common-component.version>1.0.0</cache-common-component.version>
         <cache-consumer-component.version>1.0.0</cache-consumer-component.version>
         <!--plugin-->
@@ -148,8 +149,13 @@
             </dependency>
             <dependency>
                 <groupId>ricciliao.x</groupId>
-                <artifactId>audit-log-component</artifactId>
-                <version>${x-audit-log-component.version}</version>
+                <artifactId>audit-logging-component</artifactId>
+                <version>${x-audit-logging-component.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao.x</groupId>
+                <artifactId>logging-api</artifactId>
+                <version>${x-logging-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>ricciliao.x</groupId>
