@@ -33,6 +33,7 @@
         <x-logging-api.version>1.0.0</x-logging-api.version>
         <cache-common-component.version>1.0.0</cache-common-component.version>
         <cache-consumer-component.version>1.0.0</cache-consumer-component.version>
+        <commons-validator.version>1.9.0</commons-validator.version>
         <!--plugin-->
         <sonar-maven-plugin.version>4.0.0.4121</sonar-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
@@ -176,6 +177,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-actuator</artifactId>
                 <version>${spring-boot-dependencies.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>${commons-validator.version}</version>
             </dependency>
 
             <dependency>
