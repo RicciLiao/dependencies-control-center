@@ -31,8 +31,8 @@
         <x-dynamic-aop-component.version>1.0.0</x-dynamic-aop-component.version>
         <x-audit-logging-component.version>1.0.0</x-audit-logging-component.version>
         <x-logging-api.version>1.0.0</x-logging-api.version>
-        <cache-common-component.version>1.0.0</cache-common-component.version>
-        <cache-consumer-component.version>1.0.0</cache-consumer-component.version>
+        <mcp-common-component.version>1.0.0</mcp-common-component.version>
+        <mcp-consumer-component.version>1.0.0</mcp-consumer-component.version>
         <commons-validator.version>1.9.0</commons-validator.version>
         <!--plugin-->
         <sonar-maven-plugin.version>4.0.0.4121</sonar-maven-plugin.version>
@@ -160,13 +160,13 @@
             </dependency>
             <dependency>
                 <groupId>ricciliao.x</groupId>
-                <artifactId>cache-common-component</artifactId>
-                <version>${cache-common-component.version}</version>
+                <artifactId>mcp-common-component</artifactId>
+                <version>${mcp-common-component.version}</version>
             </dependency>
             <dependency>
                 <groupId>ricciliao.x</groupId>
-                <artifactId>cache-consumer-component</artifactId>
-                <version>${cache-consumer-component.version}</version>
+                <artifactId>mcp-consumer-component</artifactId>
+                <version>${mcp-consumer-component.version}</version>
             </dependency>
             <dependency>
                 <groupId>redis.clients</groupId>
