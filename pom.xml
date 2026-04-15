@@ -36,6 +36,7 @@
         <x-logging-api.version>1.0.0</x-logging-api.version>
         <mcp-common-component.version>1.0.0</mcp-common-component.version>
         <mcp-consumer-component.version>1.0.0</mcp-consumer-component.version>
+        <x-fsp-component.version>1.0.0</x-fsp-component.version>
         <!--plugin-->
         <sonar-maven-plugin.version>4.0.0.4121</sonar-maven-plugin.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
@@ -169,6 +170,11 @@
                 <groupId>ricciliao.x</groupId>
                 <artifactId>mcp-consumer-component</artifactId>
                 <version>${mcp-consumer-component.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ricciliao.x</groupId>
+                <artifactId>fsp-component</artifactId>
+                <version>${x-fsp-component.version}</version>
             </dependency>
             <dependency>
                 <groupId>redis.clients</groupId>
