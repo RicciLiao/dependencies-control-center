@@ -26,7 +26,7 @@
         <spring-cloud.version>2025.0.2</spring-cloud.version>
         <jedis.version>5.2.0</jedis.version>
         <commons-validator.version>1.9.0</commons-validator.version>
-        <bcpkix-jdk15on.version>1.70</bcpkix-jdk15on.version>
+        <bcpkix-jdk18on.version>1.83</bcpkix-jdk18on.version>
         <commons-io.version>2.21.0</commons-io.version>
         <!--x-->
         <x-common-components.version>1.0.0</x-common-components.version>
@@ -193,8 +193,8 @@
             </dependency>
             <dependency>
                 <groupId>org.bouncycastle</groupId>
-                <artifactId>bcpkix-jdk15on</artifactId>
-                <version>${bcpkix-jdk15on.version}</version>
+                <artifactId>bcprov-jdk18on</artifactId>
+                <version>${bcpkix-jdk18on.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
