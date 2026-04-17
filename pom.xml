@@ -16,6 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!--dependencies version-->
         <spring-boot-dependencies.version>3.5.13</spring-boot-dependencies.version>
+        <spring-cloud.version>2025.0.2</spring-cloud.version>
         <jakarta.servlet-api.version>6.0.0</jakarta.servlet-api.version>
         <springdoc-openapi-starter.version>2.8.17</springdoc-openapi-starter.version>
         <logstash-logback-encoder.version>7.1.1</logstash-logback-encoder.version>
@@ -23,7 +24,6 @@
         <commons-text.version>1.10.0</commons-text.version>
         <commons-collections4.version>4.4</commons-collections4.version>
         <reflections.version>0.10.2</reflections.version>
-        <spring-cloud.version>2025.0.2</spring-cloud.version>
         <jedis.version>5.2.0</jedis.version>
         <commons-validator.version>1.9.0</commons-validator.version>
         <bcpkix-jdk18on.version>1.83</bcpkix-jdk18on.version>
@@ -137,6 +137,31 @@
                 <version>${reflections.version}</version>
             </dependency>
             <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+                <version>${spring-boot-dependencies.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>${commons-validator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk18on</artifactId>
+                <version>${bcpkix-jdk18on.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>ricciliao.x</groupId>
                 <artifactId>common-components</artifactId>
                 <version>${x-common-components.version}</version>
@@ -175,31 +200,6 @@
                 <groupId>ricciliao.x</groupId>
                 <artifactId>fsp-component</artifactId>
                 <version>${x-fsp-component.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>redis.clients</groupId>
-                <artifactId>jedis</artifactId>
-                <version>${jedis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-actuator</artifactId>
-                <version>${spring-boot-dependencies.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-validator</groupId>
-                <artifactId>commons-validator</artifactId>
-                <version>${commons-validator.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.bouncycastle</groupId>
-                <artifactId>bcprov-jdk18on</artifactId>
-                <version>${bcpkix-jdk18on.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>${commons-io.version}</version>
             </dependency>
 
             <dependency>
